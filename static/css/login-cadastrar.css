@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&family=Poppins:wght@100;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: end;
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1A27;
+}
+
+.card {
+    background-color: #272A39;
+    padding: 34px;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px 0px rgba(95, 92, 92, 0.1);
+    margin-right: 150px;
+}
+
+form {
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo {
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: all linear;
+    font-size: 0.9em;
+    color: #979191;
+    margin-bottom: 5px;
+    background-color: #1A1A27;
+    outline: none;
+
+}
+
+.campo::placeholder {
+    color: #ccc;
+}
+
+.campo:focus {
+    border-color: rgba(112, 112, 112, 1);
+}
+
+.btn {
+    padding: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: linear-gradient(200deg, #0B6BFF 0%, #292931 64%);
+    cursor: pointer;
+    transition: all linear 190ms;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #ccc;
+}
+
+p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+a {
+    font-size: 0.9em;
+    color: #0B6BFF;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.Welcome {
+    margin-right: 350px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    align-self: center;
+}
+
+.txtError{
+    color:red;
+    margin-top:5px;
+}
+
+
+
+
+/* Circulos BackGround */
+.circleBlue {
+    width: 120px;
+    height: 120px;
+    background-color: #485eca;
+    border-radius: 50%;
+    filter: blur(100px);
+    /* Faz com que a borda se torne um círculo */
+    position: absolute;
+    top: 35%;
+    /* Posiciona o círculo verticalmente no centro da tela */
+    left: 36%;
+    transform: translate(-50%, -50%);
+    /* Centraliza o círculo */
+}
+
+.circlePurple {
+    width: 120px;
+    height: 120px;
+    background-color: #FE0772;
+    border-radius: 50%;
+    filter: blur(100px);
+    /* Faz com que a borda se torne um círculo */
+    position: absolute;
+    top: 75%;
+    /* Posiciona o círculo verticalmente no centro da tela */
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* Centraliza o círculo */
+}
+
+.circleYelow {
+    width: 120px;
+    height: 120px;
+    background-color: #a09885;
+    border-radius: 50%;
+    filter: blur(100px);
+    /* Faz com que a borda se torne um círculo */
+    position: absolute;
+    top: 70%;
+    /* Posiciona o círculo verticalmente no centro da tela */
+    left: 45%;
+    transform: translate(-50%, -50%);
+    /* Centraliza o círculo */
+}

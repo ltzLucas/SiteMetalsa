@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login-cadastrar.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="circleBlue"></div>
+        <div class="circlePurple"></div>
+        <div class="circleYelow"></div>
+
+        <div class="Welcome">
+            <p>Drive for a better tomorrow</p>
+            <h2>Controle Integrado <br> Da Produção</h1>
+        </div>
+
+        <div class="card">
+            <form action="login" method="post">
+                <img src="../static/img/Logo Metalsa.png">
+                <h2>Login</h2>
+                <p>Digite seus dados para acessar.</p>
+                <input class="campo" name="free" id="free" type="text" placeholder="Digite seu Free" />
+                <input class="campo" name="password" id="password" type="password" placeholder="Digite sua senha" />
+                <a href="#">Esqueci minha senha</a>
+                {% if error %}
+                <p class="txtError">Credenciais inválidas.</p>
+                {% endif %}
+                <input class="btn" type="submit" value="Acessar" id="btn-entrar" />
+                <p>Ainda não tem conta? <a href="/cadastrarUser">Crie uma agora</a></p>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

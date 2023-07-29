@@ -1,0 +1,236 @@
+body {
+    background-color: #1A1A27;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 150px;
+}
+
+.logoMetalsa {
+    padding-top: 35px;
+    height: 62;
+    width: 281;
+}
+
+/* MENU HOME PAGE */
+.menu ul {
+    margin-left: 250px;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #FFFFFF;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    ;
+}
+
+.menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+/* DIV VALORES */
+.menu-valores {
+    padding-top: 75px;
+}
+
+.hearder-2 {
+    text-align: center;
+    align-content: center;
+}
+
+.hearder-2 ul li {
+    display: inline-flex;
+    width: 230px;
+    height: 150px;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-right: 10px;
+
+}
+
+.hearder-2 ul li img {
+    padding-right: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+/* <P> RESUMO DIARIO */
+
+.SubTitle {
+    margin: 0 150px;
+    font-size: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFFFF;
+    width: 400px;
+    height: 100px;
+
+}
+
+.Cards-Resumo ul li {
+    display: inline-block;
+    color: #FFFFFF;
+
+}
+
+.cards {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    margin-bottom: 150px;
+}
+
+.cards ul li {
+    margin-left: 30px;
+}
+
+.cardsResumo {
+    width: 250px;
+    height: 350px;
+    background-color: #272A39;
+    border-radius: 10%;
+}
+
+.imgResumo {
+    margin: 20px;
+}
+
+.valorCard {
+    font-size: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+.tituloCard {
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 20px;
+    margin: 5px;
+}
+
+.descricao {
+    font-size: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 20px;
+    margin: 5px;
+}
+
+.ProgDia {
+    margin-bottom: 75px;
+}
+
+.cardProgDia {
+    width: 760px;
+    height: 70px;
+    background-color: #272A39;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+.cardProgDia ul li {
+    font-size: 20;
+    padding-top: 5px;
+    display: inline-block;
+    color: #FFFFFF;
+    padding-left: 110px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cardProgDia ul li p {
+    text-align: center;
+    font-size: 15;
+
+}
+
+/* CardHelpDesk */
+.cardsHelp {
+    padding-left: 50px;
+}
+
+.CardHelpDesk {
+    width: 230px;
+    height: 60px;
+    background: linear-gradient(255deg, #0B6BFF 0%, #272A39 71%);
+    border-radius: 10px;
+    margin: 0px 50px;
+    align-items: center;
+}
+
+.cardsHelp ul {
+    margin-left: 50px;
+}
+
+.cardsHelp ul li {
+    display: inline-flex;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cardsHelp ul li img {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    padding-right: 15px;
+}
+
+
+
+
+
+/* Circulos BackGround */
+.circleBlue {
+    width: 250px;
+    height: 250px;
+    background-color: #4461F2;
+    border-radius: 50%;
+    filter: blur(150px);
+    /* Faz com que a borda se torne um círculo */
+    position: absolute;
+    top: 35%;
+    /* Posiciona o círculo verticalmente no centro da tela */
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* Centraliza o círculo */
+}
+
+.circlePurple {
+    width: 250px;
+    height: 250px;
+    background-color: #FE0772;
+    border-radius: 50%;
+    filter: blur(150px);
+    /* Faz com que a borda se torne um círculo */
+    position: absolute;
+    top: 75%;
+    /* Posiciona o círculo verticalmente no centro da tela */
+    left: 60%;
+    transform: translate(-50%, -50%);
+    /* Centraliza o círculo */
+}
+
+.circleYelow {
+    width: 250px;
+    height: 250px;
+    background-color: #DDA82A;
+    border-radius: 50%;
+    filter: blur(150px);
+    /* Faz com que a borda se torne um círculo */
+    position: absolute;
+    top: 130%;
+    /* Posiciona o círculo verticalmente no centro da tela */
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* Centraliza o círculo */
+}
