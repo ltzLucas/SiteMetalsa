@@ -1,39 +1,46 @@
 import pyodbc
+from modelo.User import User
 
-class ItemDatabaseUser:
+class DatabaseUser:
     def __init__(self):
         self.conn = pyodbc.connect("DRIVER={SQL Server};SERVER=LucasLima;DATABASE=Metalsa")
         self.cursor = self.conn.cursor()
 
-    def criaUsuario(self,free,nome,email,password,cargoUser):
+    def insertUser(self,user):
         sql = f"""insert into USUARIOS(Free,Name,Email,Password,CargoUser)
             VALUES
                 (?, ?, ?, ?, ?)
         """
-        self.cursor.execute(sql,(free,nome,email,password,cargoUser))
+        self.cursor.execute(sql,(user.free,user.name,user.email,user.password,user.userPosition))
         self.cursor.commit()
 
-    def procuraUserFree(self,free):
-        result = []
-        sql = "SELECT Free, Password FROM USUARIOS WHERE Free = ?"
+    def searchUserByFree(self, free):
+        sql = "SELECT * FROM USUARIOS WHERE Free = ?"
         self.cursor.execute(sql, (free,))
+        user_data = self.cursor.fetchone()
 
-        for row in self.cursor.fetchall():
-            item_dict = {}
-            item_dict["Free"] = row[0]
-            item_dict["Password"] = row[1]
-            result.append(item_dict)
+        if user_data:
+            user = User(user_data[0], user_data[1], user_data[2], user_data[3])
+            return user
+        else:
+            return None
 
-        return result
-
-    def procuraTodosIDUser(self):
-        result = []
-        sql = "SELECT Free FROM USUARIOS"
+    def searchAllUsers(self):
+        sql = "SELECT * FROM USUARIOS"
         self.cursor.execute(sql)
+        users_data = self.cursor.fetchall()
 
-        for row in self.cursor.fetchall():
-            item_dict = {}
-            item_dict["Free"] = row[0]
-            result.append(item_dict)
+        users = []
+        for user_data in users_data:
+            user = User(user_data[0], user_data[1], user_data[2], user_data[3], user_data[4])
+            users.append(user)
 
-        return result
+        return users
+
+    def deleteUser(self,free):
+        sql = "DELETE USUARIOS WHERE free = ?"
+        self.cursor.execute(sql, (free,))
+        self.cursor.commit()
+
+    def close(self):
+        self.conn.close()
